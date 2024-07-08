@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <!--link de css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor__main">
+        <img class="logo__alura" src="./img/Logo.png" alt="logo alura">
+        <div class="seccion__texto">
+            <textarea id="seccion__texto__input" rows="4" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="seccion__texto__botones">
+                <p class="seccion__texto__advertencia"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button onclick="encriptarTexto()" class="seccion__texto__boton__one">Encriptar</button>
+                    <button onclick="desencriptarTexto()" class="seccion__texto__boton__two">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor__encriptados">
+            <div class="seccion__noEncriptado" >
+                <img class="seccion__imagen__img" src="./img/Muñeco.png" alt="">
+                <div class="seccion__imagen__mensaje">
+                    <h2 class="seccion__imagen__titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="seccion__imagen__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <!--funciona cuando se clikee el boton encriptar-->
+                <div class="seccion__encriptado" >
+                    <p id="seccion__encriptado__parrafo"></p>
+                    <button class="seccion__encriptado__boton">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__left">
+                <p class="footer__parrafo">Desarrollado por 
+                    <a class="link__instagram" href="https://www.instagram.com/juampimedina_/" target="_blank">Juan Pablo Medina</a>
+                </p>
+                <p class="footer__parrafo">Front-End Developer - Argentina</p>
+                <p class="footer__parrafo">© 2024 Juan Pablo Medina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="encriptador.js"></script>
+    <!--script de font-awesome-->
+    <script src="https://kit.fontawesome.com/0386253c28.js" crossorigin="anonymous"></script>
+</body>
+</html>
